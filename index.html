@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Check your Grade</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Check your Grade</h1>
+        <form id="gradeform">
+            <label for="marks">Enter marks in persentage(%):</label> 
+            <input type="number" class="form-control"  id="marks" name="marks" required min="0" max="100">
+            <button type="submit">Check Grade</button>
+        </form>
+        <p id="result"></p>
+        <h1>Generate Pattern</h1>
+        <form id="Pattern">
+            <label for="n">Enter the number for pattern:</label>
+            <input type="number" id="n" name="n" required min="1">
+            <button type="submit">Generate Pattern</button>
+        </form>
+        <textarea id="pattern" placeholder="Read-Only input here…" readonly></textarea>
+    </div>
+    <script src="form.js"></script>
+</body>
+</html>
